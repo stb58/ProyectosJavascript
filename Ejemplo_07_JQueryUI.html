@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+</head>
+<body>
+    <div id="prueba">
+        Minions ipsum belloo! Pepete ti aamoo! Hana dul sae. Potatoooo la bodaaa gelatooo bananaaaa. Poulet tikka masala po kass jeje jiji butt tulaliloo wiiiii potatoooo tulaliloo ti aamoo! Hahaha. Jiji hahaha poulet tikka masala jiji pepete uuuhhh bananaaaa uuuhhh baboiii aaaaaah. Po kass la bodaaa chasy la bodaaa butt butt. Chasy po kass me want bananaaa! Wiiiii aaaaaah. Bee do bee do bee do tatata bala tu baboiii po kass underweaaar me want bananaaa! Para tú. Uuuhhh me want bananaaa! Bee do bee do bee do tulaliloo wiiiii bee do bee do bee do tulaliloo wiiiii tatata bala tu jeje. Pepete hahaha tatata bala tu chasy wiiiii poopayee baboiii ti aamoo!
+    </div>
+    <div id="fecha">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos doloremque nesciunt, sit adipisci sed voluptatibus harum esse sapiente dolorum error distinctio aliquid alias possimus incidunt blanditiis ex fugiat quis? Fugit.
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script>
+        $('#prueba').click(function(){$(this).toggle("blind");
+         });
+        $('#fecha').datepicker({
+            firstDay:1,
+            changeMonth : true,
+            changeYear : true,
+            yearRange : "-40: +40",
+            showButtonPanel : true,
+            numberOfMonths: [3,1],
+            currentText: "Hoy",
+            //Sacado de https://gist.github.com/benitoanagua/5851299
+            monthNames: ['Enero','Febrero','Marzo','Abril','Mayo','Junio',
+            'Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'],
+        monthNamesShort: ['Ene','Feb','Mar','Abr','May','Jun',
+            'Jul','Ago','Sep','Oct','Nov','Dic'],
+        dayNames: ['Domingo','Lunes','Martes','Miércoles','Jueves','Viernes','Sábado'],
+        dayNamesShort: ['Dom','Lun','Mar','Mié','Juv','Vie','Sáb'],
+        dayNamesMin: ['Do','Lu','Ma','Mi','Ju','Vi','Sa'],
+        dateFormat: 'dd/mm/yy',
+        });
+   
+    </script>
+</body>
+</html>
